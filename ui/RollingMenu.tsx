@@ -200,6 +200,7 @@ export default function RollingMenu() {
           <Chips label="⌘ + I for Italic" />
           <Chips label="⌘ + U for Underline" />
           <Chips label="⌘ + S to Save as PNG" />
+          <Chips label="Note: Sometimes Padding May Break Due Browser Issue, ⌘ + S Again." />
         </motion.div>
       )}
       </AnimatePresence>
