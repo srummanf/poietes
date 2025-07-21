@@ -1,0 +1,31 @@
+/* Simple Chips Component Styles */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 9999px; /* rounded-full */
+  background-color: #e5e5e5; /* bg-gray-100 */
+  color: #000000; /* text-gray-700 */
+  font-size: 14px; /* text-sm */
+  font-weight: 500; /* font-medium */
+  border: 1px solid #e5e7eb; /* border-gray-200 */
+  white-space: nowrap;
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  .chip {
+    background-color: #404040; /* dark:bg-gray-800 */
+    color: #d1d5db; /* dark:text-gray-300 */
+    border-color: #374151; /* dark:border-gray-700 */
+  }
+}
+
+/* Container for chips with gap */
+.chips-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin-left: 1rem;
+}
