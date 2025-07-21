@@ -4,7 +4,7 @@ import { cn } from '@/lib/className';
 import html2canvas from 'html2canvas';
 import dynamic from 'next/dynamic';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import 'react-quill/dist/quill.snow.css';
+// import 'react-quill/dist/quill.snow.css';
 import '@/styles/editor.css';
 
 // Dynamically import ReactQuill to avoid SSR issues
@@ -135,21 +135,9 @@ export default function Editor() {
       <div
         className={cn(
           'flex flex-col gap-16 bg-white dark:bg-gray-900',
-          takeScreenshot
-            ? 'm-16 max-w-3xl rounded-lg p-24 shadow-lg'
-            : 'mx-auto w-full max-w-2xl',
+          takeScreenshot ? 'screenshot-container' : 'mx-auto w-full max-w-2xl',
         )}
         ref={contentRef}
-        style={
-          takeScreenshot
-            ? {
-                minHeight: '400px',
-                margin: '64px',
-                padding: '96px 96px 48px 96px', // Reduced bottom padding
-                boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
-              }
-            : {}
-        }
       >
         <div className="text-quaternary space-y-4">
           <p>~{date}</p>
@@ -189,7 +177,6 @@ export default function Editor() {
     </>
   );
 }
-
 
 // 'use client';
 
