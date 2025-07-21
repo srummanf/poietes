@@ -2,6 +2,10 @@
 
 **Poietes** is a streamlined, distraction-free writing interface designed for clarity and focus. It includes a built-in screenshot feature to quickly save or share your work.
 
+![1753115976353](image/README/1753115976353.png)
+
+![1753115988081](image/README/1753115988081.png)
+
 ---
 
 ## Features
@@ -41,7 +45,6 @@ Original License is preserved in the repository.
    `npm run dev`
 5. Open your browser and navigate to:
    `http://localhost:3000` (or whatever port your dev server chooses)
-
 
 ---
 
